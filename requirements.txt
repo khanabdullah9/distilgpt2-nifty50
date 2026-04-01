@@ -1,0 +1,13 @@
+# Core ML Dependencies (CPU compatible)
+torch
+transformers
+peft
+trl
+accelerate
+datasets
+
+# Data Processing
+yfinance
+pandas
+numpy
+scipy
