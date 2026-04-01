@@ -52,15 +52,7 @@ Trains the model on the generated `train.txt`. This process takes ~15-30 minutes
 python fine_tune.py
 ```
 
-### 3. Verification & Tracking
-Evaluate the model's accuracy on the latest month of data and log everything to MLflow for analysis.
-- Open `index.ipynb` to run evaluation.
-- View Logs:
-  ```bash
-  mlflow ui --backend-store-uri sqlite:///mlflow.db
-  ```
-
-### 4. Real-time Inference
+### 3. Real-time Inference
 Get a prediction for a specific set of market values.
 ```bash
 python inference.py
@@ -79,6 +71,3 @@ The model is trained on a "Causal Chain" format:
 *This project is for educational and research purposes only. Stock market predictions are inherently uncertain. Do not use this tool for financial trading without professional advice.*
 
 ---
-
-> [!NOTE]
-> *Designed with ❤️ by Antigravity AI for the Google Deepmind Advanced Agentic Coding team.*
