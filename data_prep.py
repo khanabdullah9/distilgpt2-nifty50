@@ -2,12 +2,15 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
 import datetime
+from utils import obsolete
 
+@obsolete
 def remove_symbols(x):
     x = str(x)
     x = remove_chars(x)
     return x.replace(",", "").replace("%", "")
 
+@obsolete
 def remove_chars(x):
     chars = [chr(i) for i in range(65, 65+26)]
     x = str(x)
@@ -30,9 +33,9 @@ def data_preprocess(raw_data: pd.DataFrame) -> pd.DataFrame:
     cols = ['Date', 'Open', 'High', 'Low', 'Close']
     df = df[cols]
     
-    df["Open"] = df["Open"].apply(remove_symbols).astype("float")
-    df["High"] = df["High"].apply(remove_symbols).astype("float")
-    df["Low"] = df["Low"].apply(remove_symbols).astype("float")
+    # df["Open"] = df["Open"].apply(remove_symbols).astype("float")
+    # df["High"] = df["High"].apply(remove_symbols).astype("float")
+    # df["Low"] = df["Low"].apply(remove_symbols).astype("float")
     
 
 
