@@ -26,6 +26,15 @@ This repository demonstrates how to transform financial time-series data into a 
 
 ---
 
+## 🧪 Evaluation Metrics
+| Metric | Score |
+| ------ | ------ |
+| Precision | 0.583 |
+| F1-Score | 0.7 |
+| Recall | 0.87 |
+
+---
+
 ## 📥 Installation
 
 ```bash
